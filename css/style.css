@@ -1,0 +1,71 @@
+@import url(//db.onlinewebfonts.com/c/6d32b8e06f40fb7698cfb714b9e7975d?family=BillabongW00-Regular);
+@font-face {font-family: "BillabongW00-Regular"; src: url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.eot"); src: url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.woff") format("woff"), url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.svg#BillabongW00-Regular") format("svg"); } 
+a.navbar-brand{
+    font-family: "BillabongW00-Regular";
+}
+.navbar-light .navbar-brand{
+    color: #cda5f3 !important;
+    font-size: xx-large;
+}
+.bg-main{
+    width: 100%;
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    height: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    align-content: center;
+
+}
+.navbar{
+        position: relative;
+        
+        display: flex;
+        
+        flex-wrap: wrap;
+       
+        align-items: center;
+       
+        justify-content: space-between;
+        padding: 10px 0px 0px 10px;
+      
+    }
+a.nav-link
+{
+    color:white !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    padding-bottom: 20px;
+}
+a.nav-link:hover{color: #d57eeb !important ;}
+#musify
+{
+  color : whitesmoke;
+}
+h1{
+    text-align: center;
+ font-family: Arial, Helvetica, sans-serif;
+font-size: 80px;
+font-weight: 900;
+margin-top: 150px;
+color: black;
+}
+h2{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: black;
+
+}
+.btn-round-md{
+border-radius: 40px;
+padding: 16px 48px 18px 48px;
+font-weight: 700;
+letter-spacing: 2px;
+text-align: center;
+}
+.sub-head-title{
+    font-family: 'BillabongW00-Regular';
+    font-size: 50px;
+}
