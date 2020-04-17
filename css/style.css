@@ -1,71 +1,184 @@
 @import url(//db.onlinewebfonts.com/c/6d32b8e06f40fb7698cfb714b9e7975d?family=BillabongW00-Regular);
-@font-face {font-family: "BillabongW00-Regular"; src: url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.eot"); src: url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.woff") format("woff"), url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.svg#BillabongW00-Regular") format("svg"); } 
-a.navbar-brand{
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+
+@font-face {
+    font-family: "BillabongW00-Regular";
+    src: url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.eot");
+    src: url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.woff") format("woff"), url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6d32b8e06f40fb7698cfb714b9e7975d.svg#BillabongW00-Regular") format("svg");
+}
+
+a.navbar-brand {
     font-family: "BillabongW00-Regular";
 }
-.navbar-light .navbar-brand{
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.navbar-light .navbar-brand {
     color: #cda5f3 !important;
     font-size: xx-large;
 }
-.bg-main{
-    width: 100%;
-    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
-    height: 100%;
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    align-content: center;
 
+.bg-main {
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    background: no-repeat fixed center center cover;
+    display: table;
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
-.navbar{
-        position: relative;
-        
-        display: flex;
-        
-        flex-wrap: wrap;
-       
-        align-items: center;
-       
-        justify-content: space-between;
-        padding: 10px 0px 0px 10px;
-      
-    }
-a.nav-link
-{
-    color:white !important;
+
+
+a.nav-link {
+    color: white !important;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: large;
     padding-bottom: 20px;
 }
-a.nav-link:hover{color: #d57eeb !important ;}
-#musify
-{
-  color : whitesmoke;
-}
-h1{
-    text-align: center;
- font-family: Arial, Helvetica, sans-serif;
-font-size: 80px;
-font-weight: 900;
-margin-top: 150px;
-color: black;
-}
-h2{
-    font-size: 18px;
-    font-weight: 400;
-    text-align: center;
-    color: black;
 
+a.nav-link:hover {
+    color: #d57eeb !important;
 }
-.btn-round-md{
-border-radius: 40px;
-padding: 16px 48px 18px 48px;
-font-weight: 700;
-letter-spacing: 2px;
-text-align: center;
+
+#musify {
+    color: whitesmoke;
 }
-.sub-head-title{
+
+h1 {}
+
+
+
+.btn-round-md {
+    border-radius: 40px;
+    padding: 16px 48px 18px 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.sub-head-title {
     font-family: 'BillabongW00-Regular';
     font-size: 50px;
+}
+
+.next-btn {
+    position: absolute;
+    bottom: 0;
+    left: 48%;
+    font-size: 50px;
+    color: crimson;
+}
+
+a.next-btn:hover {
+    color: magenta;
+
+}
+
+.jumbotron-heading {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 900;
+    margin-top: 150px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#footer {
+    background: crimson !important;
+}
+
+#footer h5 {
+    padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+#footer ul.social li {
+    padding: 3px 0;
+}
+
+#footer ul.social li a i {
+    margin-right: 5px;
+    font-size: 25px;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+#footer ul.social li:hover a i {
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+#footer ul.social li a,
+#footer ul.quick-links li a {
+    color: #ffffff;
+}
+
+#footer ul.social li a:hover {
+    color: #eeeeee;
+}
+
+#footer ul.quick-links li {
+    padding: 3px 0;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+#footer ul.quick-links li:hover {
+    padding: 3px 0;
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+#footer ul.quick-links li a i {
+    margin-right: 5px;
+}
+
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px) {
+    #footer h5 {
+        padding-left: 0;
+        border-left: transparent;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
 }

@@ -7,12 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css" <link href="//db.onlinewebfonts.com/c/6d32b8e06f40fb7698cfb714b9e7975d?family=BillabongW00-Regular" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="//db.onlinewebfonts.com/c/6d32b8e06f40fb7698cfb714b9e7975d?family=BillabongW00-Regular" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/2ee1fedca1.js" crossorigin="anonymous"></script>
     <title>Musify</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
         <a class="navbar-brand text-light" href="#">Musify</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -20,28 +25,28 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"> TopCharts</a>
+                    <a class="nav-link" href="#topcharts">Top Charts</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"> SignUp</a>
+                    <a class="nav-link" href="#">SignUp</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"> Login</a>
+                    <a class="nav-link" href="#">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"> ContactUs</a>
+                    <a class="nav-link" href="#footer">Contact Us</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="bg-main">
-        <div class="container" align="center">
+    <div class="bg-main container-fluid">
+        <div class="container bg-inner" align="center">
             <div class="row align-items-center">
                 <div class="col-md-12 my-2">
-                    <h1 class="jumbotron-heading"> JUST MUSIFY </h1>
+                    <h1 class="jumbotron-heading">JUST MUSIFY</h1>
                 </div>
             </div>
             <div class="row align-items-center">
@@ -51,11 +56,232 @@
             </div>
             <div class="row align-items-center">
                 <div class="col-md-12 my-2">
-                    <button class="btn btn-danger btn-round-md">Download Now</button>
+                    <a href="#" class="btn btn-danger btn-round-md">Download Now</a>
+                </div>
+            </div>
+            <a class="next-btn" href="#carouselExampleIndicators"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/c1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/c2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/c3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/c4.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="container my-1" id="topcharts" align="center">
+        <h1>Top Charts</h1>
+        <div class="row">
+            <div class="col-md-4 my-2">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e4d09a27864745.5695c34fe1dbd.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="rowd-flex justify-content-between">
+                            <a href="#" class="btn btn-primary col-md-3"><i class="fas fa-step-backward"></i></a>
+                            <a href="#" class="btn btn-success col-md-5"><i class="fas fa-play"></i></a>
+                            <a href="#" class="btn btn-primary col-md-3"><i class="fas fa-step-forward"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-2">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://i.imgur.com/aEKiDlB.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="rowd-flex justify-content-between">
+                            <a href="#" class="btn btn-primary col-md-3"><i class="fas fa-step-backward"></i></a>
+                            <a href="#" class="btn btn-success col-md-5"><i class="fas fa-play"></i></a>
+                            <a href="#" class="btn btn-primary col-md-3"><i class="fas fa-step-forward"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-2">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/116325106/original/ccccab9c8909ad2ca1973734169c748d67785277/design-an-artwork-for-your-spotify-playlist.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="rowd-flex justify-content-between">
+                            <a href="#" class="btn btn-primary col-md-3"><i class="fas fa-step-backward"></i></a>
+                            <a href="#" class="btn btn-success col-md-5"><i class="fas fa-play"></i></a>
+                            <a href="#" class="btn btn-primary col-md-3"><i class="fas fa-step-forward"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 my-2">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.squarespace-cdn.com/content/v1/54d19bb7e4b07f218a922c91/1519357233380-JJOBNABUYI0EWMEXJYKX/ke17ZwdGBToddI8pDm48kJK4Mm1kch8SFO9ZNkN1NT97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmFk_H6M1tkD9NpL7mXac0oVSXdFfjxR5AjcLwGSebOiGBsFzzcw3xKxvyC_6CFFG_/image-asset.jpeg?format=500w" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="rowd-flex justify-content-between">
+                            <a href="#" class="btn btn-primary col-md-3"><i class="fas fa-step-backward"></i></a>
+                            <a href="#" class="btn btn-success col-md-5"><i class="fas fa-play"></i></a>
+                            <a href="#" class="btn btn-primary col-md-3"><i class="fas fa-step-forward"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-2">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/00f56557183915.59cbcc586d5b8.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="rowd-flex justify-content-between">
+                            <a href="#" class="btn btn-primary col-md-3"><i class="fas fa-step-backward"></i></a>
+                            <a href="#" class="btn btn-success col-md-5"><i class="fas fa-play"></i></a>
+                            <a href="#" class="btn btn-primary col-md-3"><i class="fas fa-step-forward"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-2">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.squarespace-cdn.com/content/v1/54d19bb7e4b07f218a922c91/1519357254538-HUC9DH0OJB7REWR71LVE/ke17ZwdGBToddI8pDm48kJK4Mm1kch8SFO9ZNkN1NT97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmN9YSRtfoTLg6dUq-6F17A0FFZK5fArcnK1IqGweyunyWChwIwkIJ_P7MaZif-uMs/image-asset.png?format=500w" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="rowd-flex justify-content-between">
+                            <a href="#" class="btn btn-primary col-md-3"><i class="fas fa-step-backward"></i></a>
+                            <a href="#" class="btn btn-success col-md-5"><i class="fas fa-play"></i></a>
+                            <a href="#" class="btn btn-primary col-md-3"><i class="fas fa-step-forward"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 my-2">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/116268305/original/5e2302824c7fb50605cc3b845f5be050d3c30b55/make-spotify-thumbnail-for-you.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="rowd-flex justify-content-between">
+                            <a href="#" class="btn btn-primary col-md-3"><i class="fas fa-step-backward"></i></a>
+                            <a href="#" class="btn btn-success col-md-5"><i class="fas fa-play"></i></a>
+                            <a href="#" class="btn btn-primary col-md-3"><i class="fas fa-step-forward"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-2">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/071e2189c27dae8f03d33d1e31881f77-1535365373097/AF41.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="rowd-flex justify-content-between">
+                            <a href="#" class="btn btn-primary col-md-3"><i class="fas fa-step-backward"></i></a>
+                            <a href="#" class="btn btn-success col-md-5"><i class="fas fa-play"></i></a>
+                            <a href="#" class="btn btn-primary col-md-3"><i class="fas fa-step-forward"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-2">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://miro.medium.com/max/600/1*eOeckYJDxK0C722-5F_jfQ.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="rowd-flex justify-content-between">
+                            <a href="#" class="btn btn-primary col-md-3"><i class="fas fa-step-backward"></i></a>
+                            <a href="#" class="btn btn-success col-md-5"><i class="fas fa-play"></i></a>
+                            <a href="#" class="btn btn-primary col-md-3"><i class="fas fa-step-forward"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <section id="footer">
+        <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                        <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                        <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                    <ul class="list-unstyled list-inline social text-center">
+                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                </hr>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                    <p><u><a href="#">Musify Music and Coding Company</a></u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
+                    <p class="h6">&copy2020 All right Reversed.<a class="text-green ml-2" href="#" target="_blank">Musify</a></p>
+                </div>
+                </hr>
+            </div>
+        </div>
+    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
